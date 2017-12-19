@@ -7,7 +7,7 @@ def turn(board)
         move(board, index)
         display_board(board)
       else
-        puts "That is not a valid move"
+        puts "Please try again"
         turn(board)
       end
   end
