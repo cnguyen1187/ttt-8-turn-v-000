@@ -3,16 +3,6 @@ def turn(board)
   input = gets.strip
   index = input_to_index(input)
 
-  if valid_move?(board, index)
-        move(board, index)
-        display_board(board)
-      else
-        puts "Please try again"
-        turn(board)
-      end
-  end
-
-
   def display_board(board)
     puts " #{board[0]} | #{board[1]} | #{board[2]} "
     puts "-----------"
